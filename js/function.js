@@ -24,10 +24,11 @@ document.querySelectorAll("#ul_items li").forEach(item => {
    item.addEventListener("click", itemClick);
 });
 
-function deleteItem(){
-    alert("delete")
-}
 
+let cart = document.querySelector("#ul_buy").value
+if (cart === undefined){
+    null
+}
 document.querySelector("#ul_buy li").forEach(item => {
     item.addEventListener("dblclick",deleteItem);
 })
