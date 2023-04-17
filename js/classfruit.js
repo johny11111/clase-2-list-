@@ -5,14 +5,14 @@ class classitems {
     }
 render(){
     let li= document.createElement("li");
-    li.className = "container";
+    li.className = "container ";
     li.id = "list_item"
     li.innerHTML = `
     name: ${this.name} 
     price: ${this.price}<br/><br/>
     `
-    li.dataset.price = this.price
-    li.dataset.name= this.name
+    li.dataset.price = this.price;
+    li.dataset.name= this.name;
       document.querySelector("#ul_items").append(li)
-}
+    }   
 }
