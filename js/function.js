@@ -23,17 +23,6 @@ function itemClick(event) {
 document.querySelectorAll("#ul_items li").forEach(item => {
    item.addEventListener("click", itemClick);
 });
-
-
-let cart = document.querySelector("#ul_buy").value
-if (cart === undefined){
-    null
-}
-document.querySelector("#ul_buy li").forEach(item => {
-    item.addEventListener("dblclick",deleteItem);
-})
-
-  
   function itemClicked() {
     const items = document.querySelectorAll("#ul_items li");
     items.forEach(item => {
