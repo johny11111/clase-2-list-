@@ -6,11 +6,12 @@ let list_items = [
 ];
 list_items.forEach(item => item.render())
 
+ let total = 0
 
 
-// function whichitem (item){
-//     return console.log(item);
-// }
+ function whichitem (item){
+    return document.querySelector("#ul_buy").innerHTML = item
+ }
 
 // const events = event => {
 //     debugger    
