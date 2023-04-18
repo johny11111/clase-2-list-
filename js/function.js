@@ -2,11 +2,12 @@
  function itemClick(event) {
    let item = event.target;
    let name = item.dataset.name;
+   console.log(name);
    let price = Number(item.dataset.price);
    let ShoppingCart = document.querySelector("#ul_buy");
   
    // Check if item already in cart and remove if double clicked
-   const existingItem = document.querySelector(`#ul_buy [data-name='${name}']`);
+   const existingItem = document.querySelector(`#ul_buy [data-name='${name}']`)
    if (existingItem && event.detail === 2) {
      total -= price;
      existingItem.remove();
