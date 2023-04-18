@@ -13,15 +13,19 @@
      newLi.dataset.price = price;
      newLi.addEventListener('dblclick',(event) => {
     let itemCurt =  event.target;
+    total -= price;
+    const totalElement = document.querySelector("#total");
+    totalElement.innerText = `${total}$`;
     itemCurt.remove()
      })
      ShoppingCart.append(newLi);
      total += price;
-   }
-
-   const totalElement = document.querySelector("#total");
+     const totalElement = document.querySelector("#total");
    totalElement.innerText = `${total}$`;
  
+   }
+
+   
 
  const list_items = [
    new classitems("banana", "12.5"),
