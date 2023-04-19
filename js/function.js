@@ -42,8 +42,8 @@ function rendercurt(name ,price){
   name: ${name} 
   price: ${price}<br/><br/>
   `
-  li.dataset.name= this.name;
-  li.dataset.price = this.price;
+  li.dataset.name= name;
+  li.dataset.price = price;
     document.querySelector("#ul_buy").append(li)
   }   
 
@@ -66,7 +66,9 @@ document.querySelectorAll("#ul_items li").forEach(item => {
     }
     else{
       cart_item.forEach( item =>{
+        document.querySelector("#ul_buy").innerHTML = ""
         rendercurt(nameele,price)
+
       } );
     }
 
